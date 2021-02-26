@@ -21,14 +21,14 @@ $("#16 textarea").val(JSON.parse(localStorage.getItem("16")));
 $("#17 textarea").val(JSON.parse(localStorage.getItem("17")));
 // function to color code rows during time ranges
 
-var currentHour = moment().format("H");
+var currentTime = moment().format("H");
 $(".col-md-10").each(function () {
   var val = parseInt($(this).attr("id"));
-  if (val > 9) {
+  if (val < currentTime) {
     $(this).css("background-color", "lightgray");
-  } else if (val < currentHour && val > currentHour - 6) {
+  } else if (val > currentTime) {
     $(this).css("background-color", "Green");
-  } else if (val === currentHour) {
+  } else if (val === currentTime) {
     $(this).css("background-color", "Red");
   }
 });
