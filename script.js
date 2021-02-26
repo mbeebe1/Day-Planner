@@ -9,4 +9,6 @@ saveButton.on("click", function(){
     var storage = $(this).parent().attr('id');
     localStorage.setItem(storage, JSON.stringify(appt));
 });
+// get data from local storage when user comes back
+$('textarea').val(JSON.parse(localStorage.getItem("9AM")));
 
