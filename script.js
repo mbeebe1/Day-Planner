@@ -24,11 +24,12 @@ $("#17 textarea").val(JSON.parse(localStorage.getItem("17")));
 var currentTime = moment().format("H");
 $(".col-md-10").each(function () {
   var val = parseInt($(this).attr("id"));
-  if (val < currentTime) {
+  if (val == currentTime) {
+    $(this).css("background-color", "Red");
+  }else if (val < currentTime) {
     $(this).css("background-color", "lightgray");
   } else if (val > currentTime) {
     $(this).css("background-color", "Green");
-  } else if (val === currentTime) {
-    $(this).css("background-color", "Red");
+  } 
   }
-});
+);
