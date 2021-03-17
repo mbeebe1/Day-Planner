@@ -6,3 +6,4 @@ Getting the function for the color change was the hardest part, I found a good e
 After several changes to the function, and having to change the time on my laptop to test it, I finally got the colors to line up with the time correctly.
 I continued to struggle with the present time, because I kept making it an absolute statement "===" rather than an open one "==".
 Once I figured that out, it happened for me.
+![Screenshot (31)](https://user-images.githubusercontent.com/76491940/111517825-dd3c6b80-872b-11eb-8870-6937e2139ea8.png)
